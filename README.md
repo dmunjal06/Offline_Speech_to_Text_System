@@ -1,15 +1,17 @@
-# 🎤 Awaaz Setu – Offline Speech to Text System
+<h1 align="center">🎤 Awaaz Setu – Offline Speech to Text System</h1>
 
-![Python](https://img.shields.io/badge/Python-3.9-blue)
-![React](https://img.shields.io/badge/React-Frontend-61DAFB)
-![Node.js](https://img.shields.io/badge/Node.js-Backend-green)
-![Express](https://img.shields.io/badge/Express.js-API-black)
-![Whisper](https://img.shields.io/badge/OpenAI-Whisper-orange)
-![License](https://img.shields.io/badge/License-Educational-blue)
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.9-blue">
+  <img src="https://img.shields.io/badge/React-Frontend-61DAFB">
+  <img src="https://img.shields.io/badge/Node.js-Backend-green">
+  <img src="https://img.shields.io/badge/Express.js-API-black">
+  <img src="https://img.shields.io/badge/OpenAI-Whisper-orange">
+  <img src="https://img.shields.io/badge/License-Educational-blue">
+</p>
 
-
+<p align="center">
 Awaaz Setu is a **web‑based offline speech‑to‑text system** that converts spoken audio into accurate text using the **Whisper deep learning model**. Users can record speech directly from the browser or upload audio files, and the system processes the input to generate real‑time transcriptions without requiring an internet connection.
-
+</p>
 
 ---
 
