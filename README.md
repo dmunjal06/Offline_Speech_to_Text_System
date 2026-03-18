@@ -22,19 +22,21 @@ A **web‑based offline speech‑to‑text system** that converts spoken Hindi a
 # 🛠 Tech Stack
 
 ### Frontend
-- HTML
+- React.js
 - CSS
-- JavaScript / React
+- WaveSurfer.js
+- Axios
 
 ### Backend
+- Node.js
+- Express.js
+- Multer
+- File System (JSON)
+
+### AI / Speech Engine
+- OpenAI Whisper Model
 - Python
-- FastAPI
-
-### Machine Learning
-- OpenAI Whisper
-- PyTorch
-- Librosa
-
+- Deep Learning Speech Recogniton
 ### Dataset
 - Mozilla Common Voice (Hindi)
 
