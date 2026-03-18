@@ -1,0 +1,266 @@
+/* GLOBAL */
+
+body{
+margin:0;
+font-family:"Segoe UI",sans-serif;
+background:#f4f6fb;
+color:#222;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 60px;
+background:white;
+box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+.nav-links a{
+margin-left:25px;
+text-decoration:none;
+color:#444;
+font-size:15px;
+}
+
+/* HERO */
+
+.hero{
+text-align:center;
+padding:100px 20px;
+background:linear-gradient(120deg,#ff7e5f,#ff9966);
+color:white;
+}
+
+.hero h1{
+font-size:52px;
+margin-bottom:10px;
+}
+
+/* FEATURES */
+
+.features{
+display:flex;
+justify-content:center;
+gap:80px;
+padding:80px 20px;
+background:#f6f8fc;
+}
+
+.feature-card{
+width:250px;
+text-align:center;
+}
+
+/* SPEECH SECTION */
+
+.transcription-section{
+padding:80px 20px;
+background:#eef2f9;
+text-align:center;
+position:relative;
+}
+
+/* side graphics */
+
+.transcription-section::before{
+content:"🎤";
+font-size:180px;
+position:absolute;
+left:60px;
+top:120px;
+opacity:0.08;
+}
+
+.transcription-section::after{
+content:"📊";
+font-size:180px;
+position:absolute;
+right:60px;
+top:150px;
+opacity:0.08;
+}
+
+/* CARD */
+
+.card{
+width:460px;
+margin:auto;
+padding:35px;
+border-radius:12px;
+background:white;
+box-shadow:0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* BUTTON */
+
+button{
+background:#ef4444;
+border:none;
+padding:10px 22px;
+color:white;
+border-radius:6px;
+cursor:pointer;
+margin-top:10px;
+}
+
+button:hover{
+background:#dc2626;
+}
+
+/* RECORDING */
+
+.recording-btn{
+background:red;
+}
+
+/* WAVEFORM */
+
+.waveform{
+margin-top:25px;
+width:100%;
+height:90px;
+background:#f3f4f6;
+border-radius:6px;
+}
+
+/* RESULT */
+
+.result{
+margin-top:25px;
+padding:15px;
+background:#f2f2f2;
+border-radius:6px;
+}
+
+/* FOOTER */
+
+.footer{
+margin-top:60px;
+padding:25px;
+text-align:center;
+background:#222;
+color:white;
+}
+
+/* RECORDING BUTTON ANIMATION */
+
+.recording-btn{
+background:red;
+animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+0%{transform:scale(1)}
+50%{transform:scale(1.08)}
+100%{transform:scale(1)}
+}
+
+/* RESULT BOX UPGRADE */
+
+.result{
+margin-top:25px;
+padding:20px;
+background:linear-gradient(135deg,#f8fafc,#eef2f9);
+border-radius:8px;
+font-size:18px;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* FLOATING SIDE GRAPHICS */
+
+.transcription-section::before{
+content:"🎤";
+font-size:180px;
+position:absolute;
+left:80px;
+top:160px;
+opacity:0.07;
+animation:float 6s ease-in-out infinite;
+}
+
+.transcription-section::after{
+content:"📊";
+font-size:180px;
+position:absolute;
+right:80px;
+top:180px;
+opacity:0.07;
+animation:float 7s ease-in-out infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0px)}
+50%{transform:translateY(-15px)}
+100%{transform:translateY(0px)}
+}
+
+/* WAVEFORM LOOK */
+
+.waveform{
+margin-top:25px;
+width:100%;
+height:90px;
+background:linear-gradient(90deg,#f1f5f9,#e5e7eb);
+border-radius:8px;
+}
+
+/* GLASSMORPHISM */
+
+.glass{
+background:rgba(255,255,255,0.65);
+backdrop-filter:blur(12px);
+border:1px solid rgba(255,255,255,0.2);
+}
+
+/* DARK MODE */
+
+.dark{
+background:#0f172a;
+color:white;
+}
+
+.dark .card{
+background:#1e293b;
+}
+
+.dark .navbar{
+background:#111827;
+}
+
+.dark .footer{
+background:#020617;
+}
+
+/* AUDIO PLAYER */
+
+.audio-player{
+margin-top:15px;
+width:100%;
+}
+
+/* RECORDING BUTTON */
+
+.recording-btn{
+background:red;
+animation:pulse 1.2s infinite;
+}
+
+@keyframes pulse{
+0%{transform:scale(1)}
+50%{transform:scale(1.08)}
+100%{transform:scale(1)}
+}
+
+/* DARK MODE BUTTON */
+
+.dark-btn{
+margin-left:20px;
+background:none;
+border:none;
+font-size:18px;
+cursor:pointer;
+}
