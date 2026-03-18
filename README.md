@@ -1,4 +1,4 @@
-# 🎤 Offline_Speech_to_Text_System
+# 🎤 Awaaz Setu – Offline Speech to Text System
 
 ![Python](https://img.shields.io/badge/Python-3.9-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
@@ -8,6 +8,7 @@ Awaaz Setu is a **web‑based offline speech‑to‑text system** that converts 
 
 
 ---
+
 # 📖 Project Overview
 
 Awaaz Setu is an offline speech‑to‑text system that converts spoken audio into text using deep learning–based speech recognition.
@@ -18,6 +19,7 @@ Awaaz Setu is an offline speech‑to‑text system that converts spoken audio in
 - 🌐 Works completely offline without requiring internet connectivity  
 - 💻 Provides an interactive web interface for recording, uploading, and viewing results
 
+---
 
 # 🚀 Features
 
@@ -34,38 +36,45 @@ Awaaz Setu is an offline speech‑to‑text system that converts spoken audio in
 
 # 🛠 Tech Stack
 
-### Frontend
+### 🎨 Frontend
 - React.js
 - CSS
 - WaveSurfer.js
 - Axios
 
-### Backend
+### ⚙ Backend
 - Node.js
 - Express.js
 - Multer
 - File System (JSON)
 
-### AI / Speech Engine
+### 🤖 AI / Speech Engine
 - OpenAI Whisper Model
 - Python
 - Deep Learning Speech Recogniton
 
-### Dataset
+### 📊 Dataset
 - Mozilla Common Voice
 
 ---
 
 # 📂 Project Structure
-![App Screenshot](project_structure.png)
+<p align="center">
+  <img src="project_structure.png" width="600">
+</p>
 
-# ▶ Usage
+
+---
+
+# ▶️ Usage
 - 📁 Upload an audio file or record speech using the microphone  
 - 🎤 The system captures the audio input from the user  
 - 🧠 The backend processes the audio using the Whisper speech recognition model  
 - 📝 The system converts the speech into text transcription  
 - 📊 The transcription result is displayed on the web interface  
 - 💾 The transcription can be downloaded or stored for later use
+
+---
 
 # 🎯 Project Goal
 
@@ -77,6 +86,7 @@ The goal of **Awaaz Setu** is to develop an offline speech‑to‑text system th
 - 🌐 Enable speech recognition without requiring internet connectivity  
 - 💻 Provide a simple and user‑friendly web interface for interaction
 
+---
 
 # 📌 Future Improvements
 - 🧑‍💻 Speaker identification for multi-speaker environments  
@@ -84,6 +94,8 @@ The goal of **Awaaz Setu** is to develop an offline speech‑to‑text system th
 - 📊 Accuracy evaluation using Word Error Rate (WER) metrics  
 - 📱 Mobile application integration for on-the-go usage  
 - 🌐 Multilingual speech recognition support
+
+---
 
 # 📜 License
 This project is developed for educational and research purposes.
