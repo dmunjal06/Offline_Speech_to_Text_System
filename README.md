@@ -1,4 +1,4 @@
-# 🎤 Local_Language_Speech_to_Text 
+# 🎤 Offline_Speech_to_Text_System
 
 ![Python](https://img.shields.io/badge/Python-3.9-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
