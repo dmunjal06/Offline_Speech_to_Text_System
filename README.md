@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-Awaaz Setu is a <b>web‑based offline speech‑to‑text system </b> that converts spoken audio into accurate text using the <b> Whisper deep learning model </b>. Users can record speech directly from the browser or upload audio files, and the system processes the input to generate real‑time transcriptions without requiring an internet connection.
+Awaaz Setu is a <b>web‑based offline speech‑to‑text system</b> that converts spoken audio into accurate text using the <b>Whisper deep learning model</b>. Users can record speech directly from the browser or upload audio files, and the system processes the input to generate real‑time transcriptions without requiring an internet connection.
 </p>
 
 ---
