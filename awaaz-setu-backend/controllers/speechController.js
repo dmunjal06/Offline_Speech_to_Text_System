@@ -20,24 +20,31 @@ const uploadSpeech = (req, res) => {
       return res.status(500).json({ error: err.message });
     }
 
-    const audioPath = req.file.path;
+    const audioPath = path.resolve(req.file.path);
+
+    console.log("Audio Path:", audioPath);
 
     // run python whisper script
-    exec(
-      `python ../speech-engine/transcribe.py ${audioPath}`,
-      (error, stdout, stderr) => {
+    const scriptPath = path.join(__dirname, "../../speech-engine/transcribe.py");
+    exec(`python "${scriptPath}" "${audioPath}"`, (error, stdout, stderr) => {
         if (error) {
+          console.error("PYTHON ERROR:", error);
+          console.error("STDERR:", stderr);
           return res.status(500).json({ error: error.message });
         }
 
         try {
-          const result = JSON.parse(stdout);
+          let jsonStart = stdout.indexOf("{");
+          let jsonString = stdout.slice(jsonStart);
+
+          const result = JSON.parse(jsonString);
 
           res.json({
             message: "Transcription successful",
             transcription: result.text,
           });
         } catch (parseError) {
+          console.error("PARSE ERROR:", stdout);
           res.status(500).json({ error: "Error parsing transcription" });
         }
       }
