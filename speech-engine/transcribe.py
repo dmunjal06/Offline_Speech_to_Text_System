@@ -3,17 +3,23 @@ import sys
 import os
 import json
 
-# Tell Python where ffmpeg is located
-os.environ["PATH"] += os.pathsep + r"D:\Accent-Robust Offline Hindi Speech-to-Text System Using Deep Learning\ffmpeg-8.0.1-essentials_build\bin"
+# Set ffmpeg path
+os.environ["PATH"] += os.pathsep + r"E:\Accent-Robust Offline Hindi Speech-to-Text System Using Deep Learning\ffmpeg-8.0.1-essentials_build\bin"
 
-# Load model
-model = whisper.load_model("base")
+try:
+    # Load model
+    model = whisper.load_model("base")
 
-# Get audio file path
-audio_path = sys.argv[1]
+    # Get audio file path
+    audio_path = sys.argv[1]
+    audio_path = os.path.abspath(audio_path)
 
-# Transcribe audio
-result = model.transcribe(audio_path)
+    # Transcribe
+    result = model.transcribe(audio_path, task="transcribe", language=None)
 
-# Print result
-print(json.dumps({"text": result["text"]}))
+    # ✅ ONLY JSON OUTPUT
+    print(json.dumps({"text": result["text"]}))
+
+except Exception as e:
+    print(json.dumps({"error": str(e)}))
+    sys.exit(1)
